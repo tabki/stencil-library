@@ -1,0 +1,225 @@
+/*
+  BREAKPOINTS
+*/
+/**
+ * Spacing / Font sizes
+ */
+/**
+ * General
+ */
+/**
+ * Theme / Colours
+ */
+/*
+  Main list of all colours
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@keyframes pulse-animation--primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 181, 253, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(43, 181, 253, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(43, 181, 253, 0.5); } }
+
+@keyframes pulse-animation--red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 0, 74, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(251, 0, 74, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(251, 0, 74, 0.5); } }
+
+@keyframes pulse-animation--green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 243, 181, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(32, 243, 181, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(32, 243, 181, 0.5); } }
+
+@keyframes pulse-animation--blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 121, 255, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(41, 121, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(41, 121, 255, 0.5); } }
+
+@keyframes pulse-animation--orange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 126, 9, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(253, 126, 9, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(253, 126, 9, 0.5); } }
+
+@keyframes pulse-animation--yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 220, 40, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(255, 220, 40, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(255, 220, 40, 0.5); } }
+
+@keyframes pulse-animation--darkpurple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 10, 61, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(54, 10, 61, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(54, 10, 61, 0.5); } }
+
+@keyframes pulse-animation--primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 181, 253, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(43, 181, 253, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(43, 181, 253, 0.5); } }
+
+@keyframes pulse-animation--red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 0, 74, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(251, 0, 74, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(251, 0, 74, 0.5); } }
+
+@keyframes pulse-animation--green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 243, 181, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(32, 243, 181, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(32, 243, 181, 0.5); } }
+
+@keyframes pulse-animation--blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 121, 255, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(41, 121, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(41, 121, 255, 0.5); } }
+
+@keyframes pulse-animation--orange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 126, 9, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(253, 126, 9, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(253, 126, 9, 0.5); } }
+
+@keyframes pulse-animation--yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 220, 40, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(255, 220, 40, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(255, 220, 40, 0.5); } }
+
+@keyframes pulse-animation--darkpurple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 10, 61, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(54, 10, 61, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(54, 10, 61, 0.5); } }
+
+/*
+  Main list of all colours
+*/
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal; }
+
+h1,
+.h1 {
+  font-size: 6.8541rem;
+  line-height: 7rem !important; }
+
+h2,
+.h2 {
+  font-size: 4.23607rem;
+  line-height: 5rem !important; }
+
+h3,
+.h3 {
+  font-size: 2.61803rem;
+  line-height: 3rem !important; }
+
+h4,
+.h4 {
+  font-size: 1.61803rem;
+  line-height: 2rem !important; }
+
+h5,
+.h5 {
+  font-size: 1rem;
+  line-height: 1rem !important; }
+
+h6,
+.h6 {
+  font-size: 1rem;
+  line-height: 1rem !important; }
+
+p,
+span,
+.p {
+  font-size: 1rem;
+  line-height: 1rem !important; }
+
+.text-weight--light {
+  font-weight: 300; }
+
+.text-weight--normal {
+  font-weight: 400; }
+
+.text-weight--bold {
+  font-weight: 600; }
+
+.text-weight--bolder {
+  font-weight: 700; }
+
+.text-spacing--normal {
+  letter-spacing: normal; }
+
+.text-spacing--wide {
+  letter-spacing: 0.2rem; }
+
+.text-transform--upper {
+  text-transform: uppercase; }
+
+.text-transform--lower {
+  text-transform: lowercase; }
+
+.text-transform--caps {
+  text-transform: capitalize; }
+
+.text-color--lightest {
+  color: #707d85; }
+
+.text-color--light {
+  color: #5b6c77; }
+
+.text-color--normal {
+  color: #1f3a4a; }
+
+.text--clickable {
+  color: #5b6c77 !important;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                supported by Chrome and Opera */ }
+  .text--clickable:hover {
+    color: #1f3a4a !important;
+    cursor: pointer; }

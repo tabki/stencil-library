@@ -1,0 +1,8 @@
+$phi: 1.61803398874989;
+
+@function gld($units: 1) {
+  @if (type-of($units) != number) {
+    @error "error - units must be a number";
+  }
+  @return pow($phi, $units);
+}

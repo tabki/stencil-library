@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+$font-weights: (
+  light: 300,
+  normal: 400,
+  semibold: 500,
+  bold: 600,
+  bolder: 700
+);
+
+@mixin get-text-weight($weight) {
+  font-weight: map-get($font-weights, $weight);
+}
+
+@mixin makeFontWeightModifiers() {
+  @each $weight, $value in $font-weights {
+    &.--#{$weight} {
+      @include get-text-weight($weight);
+    }
+  }
+}
+
+$letter-spacings: (
+  normal: normal,
+  wide: 0.2rem
+);
+
+@mixin get-letter-spacing($spacing) {
+  letter-spacing: map-get($letter-spacings, $spacing);
+}
+
+@mixin makeLetterSpacingModifiers() {
+  @each $spacing, $value in $letter-spacings {
+    &.--spacing-#{$spacing} {
+      @include get-letter-spacing($spacing);
+    }
+  }
+}
+
+$text-transforms: (
+  upper: uppercase,
+  lower: lowercase,
+  caps: capitalize
+);
+
+@mixin get-text-transform($transform) {
+  text-transform: map-get($text-transforms, $transform);
+}
+
+@mixin makeTextTransformModifiers() {
+  @each $transform, $value in $text-transforms {
+    &.--transform-#{$transform} {
+      @include get-text-transform($transform);
+    }
+  }
+}
+
+$text-shades: (
+  lightest: color($ink, 200),
+  light: color($ink, 300),
+  normal: color($ink, 400),
+  dark: color($ink, 500)
+);
+
+@mixin get-text-shade($shade) {
+  color: map-get($text-shades, $shade);
+}
+@mixin makeTextShadeModifiers() {
+  @each $shade, $value in $text-shades {
+    &.--shade-#{$shade} {
+      @include get-text-shade($shade);
+    }
+  }
+}
+
+@mixin makeTextClickableModifier() {
+  &.--clickable {
+    color: map-get($text-shades, light);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    &:hover {
+      @include get-text-shade(dark);
+      @include get-text-weight(bold);
+      cursor: pointer;
+    }
+  }
+}
+
+@mixin text-base() {
+  @include get-text-shade(normal);
+}
+
+.text {
+  // base
+  @include text-base();
+  // modifiers
+  @include makeFontWeightModifiers();
+  @include makeLetterSpacingModifiers();
+  @include makeTextTransformModifiers();
+  @include makeTextShadeModifiers();
+  @include makeTextClickableModifier();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include text-base();
+}
+
+h1,
+.h1 {
+  @include font-scale(1);
+  margin-top: 0;
+  margin-bottom: spacing(3);
+}
+
+h2,
+.h2 {
+  @include font-scale(2);
+  margin-top: 0;
+  margin-bottom: spacing(2);
+}
+h3,
+.h3 {
+  @include font-scale(3);
+  margin-top: 0;
+  margin-bottom: spacing(1);
+}
+h4,
+.h4 {
+  @include font-scale(4);
+  margin-top: 0;
+  margin-bottom: spacing(1);
+}
+h5,
+.h5 {
+  @include font-scale(5);
+  margin-top: 0;
+  margin-bottom: spacing(1);
+}
+h6,
+.h6 {
+  @include font-scale(5);
+  margin-top: 0;
+  margin-bottom: spacing(1);
+}
+p,
+span {
+  @include font-scale(5);
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: spacing(1);
+}

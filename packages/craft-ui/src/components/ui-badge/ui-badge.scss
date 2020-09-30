@@ -1,0 +1,37 @@
+@import "lib";
+@import "../ui-text/ui-text.scss";
+
+@mixin ui-badge-base() {
+  border-radius: 1rem;
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: spacing(1);
+  margin-bottom: spacing(1);
+}
+
+.ui-badge__container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  > .ui-badge__sup {
+    top: 0;
+  }
+}
+
+/******************************************************************************
+* SIZES
+*******************************************************************************/
+.ui-badge {
+  //@include surface-size("normal");
+  //@include generateSizingStyles();
+  @include ui-badge-base();
+  /******************************************************************************
+  * COLOR
+  *******************************************************************************/
+  @each $color-name, $color-map in $ui-colors {
+    &.--#{$color-name} {
+      background: color($color-map);
+      color: text-color-for(color($color-map));
+    }
+  }
+}

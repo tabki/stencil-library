@@ -1,0 +1,143 @@
+/*
+  BREAKPOINTS
+*/
+/**
+ * Spacing / Font sizes
+ */
+/**
+ * General
+ */
+/**
+ * Theme / Colours
+ */
+/*
+  Main list of all colours
+*/
+@keyframes pulse-animation--primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 181, 253, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(43, 181, 253, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(43, 181, 253, 0.5); } }
+
+@keyframes pulse-animation--red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 0, 74, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(251, 0, 74, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(251, 0, 74, 0.5); } }
+
+@keyframes pulse-animation--green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 243, 181, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(32, 243, 181, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(32, 243, 181, 0.5); } }
+
+@keyframes pulse-animation--blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 121, 255, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(41, 121, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(41, 121, 255, 0.5); } }
+
+@keyframes pulse-animation--orange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 126, 9, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(253, 126, 9, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(253, 126, 9, 0.5); } }
+
+@keyframes pulse-animation--yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 220, 40, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(255, 220, 40, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(255, 220, 40, 0.5); } }
+
+@keyframes pulse-animation--darkpurple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 10, 61, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(54, 10, 61, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(54, 10, 61, 0.5); } }
+
+@keyframes pulse-animation--primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 181, 253, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(43, 181, 253, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(43, 181, 253, 0.5); } }
+
+@keyframes pulse-animation--red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 0, 74, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(251, 0, 74, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(251, 0, 74, 0.5); } }
+
+@keyframes pulse-animation--green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 243, 181, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(32, 243, 181, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(32, 243, 181, 0.5); } }
+
+@keyframes pulse-animation--blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 121, 255, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(41, 121, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(41, 121, 255, 0.5); } }
+
+@keyframes pulse-animation--orange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 126, 9, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(253, 126, 9, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(253, 126, 9, 0.5); } }
+
+@keyframes pulse-animation--yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 220, 40, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(255, 220, 40, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(255, 220, 40, 0.5); } }
+
+@keyframes pulse-animation--darkpurple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 10, 61, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(54, 10, 61, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(54, 10, 61, 0.5); } }
+
+/*
+  Main list of all colours
+*/
+.tooltip__container {
+  display: inline-block; }
+  .tooltip__container > * {
+    margin: 0; }
+
+ui-tooltip {
+  margin-bottom: 1rem;
+  display: inline-block; }
+  ui-tooltip {
+    margin-right: 1rem; }
+
+.tippy {
+  position: absolute; }

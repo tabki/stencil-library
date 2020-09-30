@@ -1,0 +1,28 @@
+@import "lib";
+
+.divider {
+  position: relative;
+}
+
+.divider-style--none {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.divider-style--normal {
+  border-bottom: 1px solid color($ink, 100);
+}
+
+.divider-style--dashed {
+  border-bottom: 1px dashed color($ink, 100);
+}
+
+.divider__content {
+  padding-left: spacing(1);
+  padding-right: spacing(1);
+  background: white;
+  position: absolute;
+  bottom: -0.5rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+}

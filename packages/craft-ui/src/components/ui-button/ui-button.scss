@@ -1,0 +1,134 @@
+@import "lib";
+
+@mixin button-style-full($button-color) {
+  background-color: $button-color;
+  color: text-color-for($button-color);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $button-color + 8;
+  }
+}
+
+@mixin button-style-thin($button-color) {
+  background-color: color($base, 100);
+  color: color($ink, 300);
+  border: 1px solid color($ink, 100);
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid $button-color;
+    color: $button-color;
+  }
+}
+
+@mixin button-style-hollow($button-color) {
+  background-color: unset;
+  color: $button-color;
+  border: 1px solid $button-color;
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid $button-color;
+    color: text-color-for($button-color);
+    background-color: $button-color;
+  }
+}
+
+@mixin button-style-dashed($button-color) {
+  background-color: color($base, 100);
+  color: color($ink, 300);
+  border: 1px dashed color($ink, 100);
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px dashed $button-color;
+    color: $button-color;
+  }
+}
+
+@mixin button-intent-danger() {
+  background-color: color($base, 200);
+  color: color($red);
+  border: 1px solid color($ink, 100);
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid color($red);
+    color: white;
+    background-color: color($red);
+  }
+  &:focus,
+  &:active {
+    @include pulse-animation("red");
+    box-shadow: 0px 0px 0px spacing(0.17) transparentize(color($red), 0.5);
+  }
+}
+
+@mixin button-base() {
+  border-radius: $border-radius;
+  border: none;
+  transition: box-shadow 0.25s ease-in;
+  transition: background-color 0.1s ease-in;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+  margin-bottom: spacing(1);
+  display: inline-block;
+  & {
+    margin-right: spacing(1);
+  }
+}
+
+@mixin generateButtonStyles($color-name, $button-color) {
+  @include button-style-full($button-color);
+  &:focus,
+  &:active {
+    @include pulse-animation($color-name);
+    box-shadow: 0px 0px 0px spacing(0.17) transparentize($button-color, 0.5);
+  }
+  &.--full {
+    @include button-style-full($button-color);
+  }
+
+  &.--thin {
+    @include button-style-thin($button-color);
+  }
+
+  &.--hollow {
+    @include button-style-hollow($button-color);
+  }
+
+  &.--dashed {
+    @include button-style-dashed($button-color);
+  }
+
+  &.--danger {
+    @include button-intent-danger();
+  }
+}
+
+.ui-button {
+  @include button-base();
+  // defaults to normal sized,  full button
+  @include surface-size("medium");
+  @include button-style-full($primary);
+
+  @include generateButtonStyles("primary", $primary);
+  @include generateSizingStyles();
+
+  &:focus,
+  &:active {
+    @include pulse-animation("primary");
+    box-shadow: 0px 0px 0px spacing(0.17) transparentize($primary, 0.5);
+  }
+
+  @each $color-name, $color-map in $ui-colors {
+    &.--#{$color-name} {
+      @include generateButtonStyles($color-name, color($color-map));
+    }
+  }
+}

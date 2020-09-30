@@ -1,0 +1,176 @@
+/*
+  BREAKPOINTS
+*/
+/**
+ * Spacing / Font sizes
+ */
+/**
+ * General
+ */
+/**
+ * Theme / Colours
+ */
+/*
+  Main list of all colours
+*/
+@keyframes pulse-animation--primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 181, 253, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(43, 181, 253, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(43, 181, 253, 0.5); } }
+
+@keyframes pulse-animation--red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 0, 74, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(251, 0, 74, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(251, 0, 74, 0.5); } }
+
+@keyframes pulse-animation--green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 243, 181, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(32, 243, 181, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(32, 243, 181, 0.5); } }
+
+@keyframes pulse-animation--blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 121, 255, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(41, 121, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(41, 121, 255, 0.5); } }
+
+@keyframes pulse-animation--orange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 126, 9, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(253, 126, 9, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(253, 126, 9, 0.5); } }
+
+@keyframes pulse-animation--yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 220, 40, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(255, 220, 40, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(255, 220, 40, 0.5); } }
+
+@keyframes pulse-animation--darkpurple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 10, 61, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(54, 10, 61, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(54, 10, 61, 0.5); } }
+
+@keyframes pulse-animation--primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 181, 253, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(43, 181, 253, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(43, 181, 253, 0.5); } }
+
+@keyframes pulse-animation--red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 0, 74, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(251, 0, 74, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(251, 0, 74, 0.5); } }
+
+@keyframes pulse-animation--green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 243, 181, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(32, 243, 181, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(32, 243, 181, 0.5); } }
+
+@keyframes pulse-animation--blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 121, 255, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(41, 121, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(41, 121, 255, 0.5); } }
+
+@keyframes pulse-animation--orange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 126, 9, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(253, 126, 9, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(253, 126, 9, 0.5); } }
+
+@keyframes pulse-animation--yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 220, 40, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(255, 220, 40, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(255, 220, 40, 0.5); } }
+
+@keyframes pulse-animation--darkpurple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 10, 61, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(54, 10, 61, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(54, 10, 61, 0.5); } }
+
+/*
+  Main list of all colours
+*/
+.ui-arrow__svg {
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+.ui-arrow-box__arrow {
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  position: absolute; }
+
+.ui-arrow-box_placement--top {
+  padding-bottom: 1.5rem; }
+  .ui-arrow-box_placement--top .ui-arrow-box__arrow {
+    bottom: 0;
+    margin-bottom: 0.5rem; }
+  .ui-arrow-box_placement--top .ui-arrow__svg {
+    transform: rotate(270deg); }
+
+.ui-arrow-box_placement--bottom {
+  padding-top: 1.5rem; }
+  .ui-arrow-box_placement--bottom .ui-arrow-box__arrow {
+    top: 0;
+    margin-top: 0.5rem; }
+  .ui-arrow-box_placement--bottom .ui-arrow__svg {
+    transform: rotate(90deg); }
+
+.ui-arrow-box_placement--left {
+  padding-right: 1.5rem; }
+  .ui-arrow-box_placement--left .ui-arrow-box__arrow {
+    right: 0;
+    margin-right: 0.5rem; }
+  .ui-arrow-box_placement--left .ui-arrow__svg {
+    transform: rotate(180deg); }
+
+.ui-arrow-box_placement--right {
+  padding-left: 1.5rem; }
+  .ui-arrow-box_placement--right .ui-arrow-box__arrow {
+    left: 0;
+    margin-left: 0.5rem; }
+
+.arrow-border {
+  fill: rgba(0, 0, 0, 0.13); }
+
+.arrow-fill {
+  fill: white; }

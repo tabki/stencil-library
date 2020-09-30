@@ -1,0 +1,22 @@
+{
+  "private": "true",
+  "name": "cloud-core-stencil-components",
+  "version": "0.0.2",
+  "description": "TruRating UI Web Components",
+  "scripts": {
+    "start": "gulp dev",
+    "preinstall": "npm i -g lerna && lerna bootstrap"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.5",
+    "gulp-uglifycss": "^1.0.9",
+    "lerna": "^2.7.1"
+  },
+  "author": "Alex White",
+  "license": "MIT"
+}

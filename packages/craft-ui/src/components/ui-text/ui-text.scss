@@ -1,0 +1,101 @@
+@import "lib";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+
+h1,
+.h1 {
+  @include font-scale(1);
+}
+
+h2,
+.h2 {
+  @include font-scale(2);
+}
+h3,
+.h3 {
+  @include font-scale(3);
+}
+h4,
+.h4 {
+  @include font-scale(4);
+}
+h5,
+.h5 {
+  @include font-scale(5);
+}
+h6,
+.h6 {
+  @include font-scale(5);
+}
+p,
+span,
+.p {
+  @include font-scale(5);
+}
+
+$font-weights: (
+  light: 300,
+  normal: 400,
+  bold: 600,
+  bolder: 700
+);
+
+@each $weight, $value in $font-weights {
+  .text-weight--#{$weight} {
+    font-weight: $value;
+  }
+}
+
+$letter-spacings: (
+  normal: normal,
+  wide: 0.2rem
+);
+
+@each $spacing, $value in $letter-spacings {
+  .text-spacing--#{$spacing} {
+    letter-spacing: $value;
+  }
+}
+
+$text-transforms: (
+  upper: uppercase,
+  lower: lowercase,
+  caps: capitalize
+);
+
+@each $transform, $value in $text-transforms {
+  .text-transform--#{$transform} {
+    text-transform: $value;
+  }
+}
+
+$text-colors: (
+  lightest: color($ink, 200),
+  light: color($ink, 300),
+  normal: color($ink, 400)
+);
+
+@each $color, $value in $text-colors {
+  .text-color--#{$color} {
+    color: $value;
+  }
+}
+
+.text--clickable {
+  color: map-get($text-colors, light) !important;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+  &:hover {
+    color: map-get($text-colors, normal) !important;
+    cursor: pointer;
+  }
+}

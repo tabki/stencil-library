@@ -1,0 +1,23 @@
+$font-scales: (
+  1: gld(4),
+  2: gld(3),
+  3: gld(2),
+  4: gld(1),
+  5: 1
+);
+
+@function get-line-height($fontSize) {
+  @return ceil($fontSize) + rem;
+}
+
+@function get-font-scales($scale) {
+  @if map-has-key($font-scales, $scale) {
+    @return map-get($font-scales, $scale);
+  }
+  @warn "Unknown `#{$scale}` in $font-scales.";
+}
+
+@mixin font-scale($scale) {
+  font-size: spacing(get-font-scales($scale));
+  line-height: get-line-height(get-font-scales($scale)) !important;
+}

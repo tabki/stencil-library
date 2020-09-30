@@ -1,0 +1,47 @@
+html {
+  font-size: 14px;
+}
+
+hr {
+  display: block;
+  margin-top: spacing(1);
+  margin-bottom: spacing(1);
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-top: 0;
+}
+
+html,
+body {
+  color: color($ink, 400);
+}
+
+table,
+td,
+th {
+  border: 1px solid color($ink, 100);
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: spacing(1);
+}
+
+code {
+  font-size: 0.9em;
+  border-radius: $border-radius;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  background: color($base, 200);
+}

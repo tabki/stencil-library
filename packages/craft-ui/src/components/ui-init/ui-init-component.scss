@@ -1,0 +1,5 @@
+// imports all common styles.
+
+// name has to be 'ui-init-component' due to import loop created
+// by having same file names.
+@import "ui-init";

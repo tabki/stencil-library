@@ -1,0 +1,20 @@
+@import "lib";
+
+.grid {
+  padding: spacing(1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+}
+
+.grid--testing {
+  border: 2px dashed color($purple, 300);
+  > ui-grid-item {
+    border: 2px solid color($darkpurple, 300);
+  }
+}

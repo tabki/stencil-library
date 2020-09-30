@@ -1,0 +1,17 @@
+@each $color-name, $color-map in $ui-colors {
+  @keyframes pulse-animation--#{$color-name} {
+    0% {
+      box-shadow: 0 0 0 0 transparentize(color($color-map), 0.5);
+    }
+    70% {
+      box-shadow: 0 0 0 spacing(0.4) transparentize(color($color-map), 1);
+    }
+    100% {
+      box-shadow: 0 0 0 spacing(0.17) transparentize(color($color-map), 0.5);
+    }
+  }
+}
+
+@mixin pulse-animation($color-name, $duration: 0.3s) {
+  animation: pulse-animation--#{$color-name} $duration ease-out;
+}

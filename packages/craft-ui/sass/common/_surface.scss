@@ -1,0 +1,15 @@
+@import "lib";
+
+.ui-surface {
+  background: red;
+  @each $size, $config in $surface-sizes {
+    &.--size-#{$size} {
+      @include surface-size($size);
+      @each $shape in $surface-shapes {
+        &.--shape-#{$shape} {
+          @include surface-shape($size, $shape);
+        }
+      }
+    }
+  }
+}

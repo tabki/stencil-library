@@ -1,0 +1,179 @@
+$grid-gutter-width: spacing(1);
+$grid-columns: 12 !default;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 500px,
+  md: 700px,
+  lg: 900px,
+  xl: 1200px
+) !default;
+
+// Neat grid configuration
+$neat-grid: (
+  columns: $grid-columns,
+  gutter: $grid-gutter-width
+);
+
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+//
+//    >> breakpoint-min(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    576px
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+// Returns a blank string if smallest breakpoint,
+// otherwise returns the name with a dash infront.
+// Useful for making responsive utilities.
+//
+//    >> breakpoint-infix(xs, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    ""  (Returns a blank string)
+//    >> breakpoint-infix(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    "-sm"
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin make-grid-column($grid-column-size) {
+  // margin on bottom to ensure that grid items on multiple
+  // lines don't 'stick' together.
+  // a negative margin is included in the .grid class to ensure that
+  // grid doesn't have any extra margins.
+  margin-bottom: $grid-gutter-width;
+  @include grid-column($grid-column-size);
+}
+
+@mixin column-push($offset) {
+  @include grid-push($offset);
+}
+
+@mixin column-shift($offset) {
+  @include grid-shift($offset);
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// defines a outer container
+.grid {
+  // offsets the bottom margin on grid columns.
+  // this is so items within grid are separated vertically
+  @include clearfix();
+  margin-bottom: $grid-gutter-width * -1;
+  &.--flush {
+    margin-right: $grid-gutter-width * -1;
+    margin-left: $grid-gutter-width * -1;
+  }
+}
+
+.row {
+  @include grid-container();
+  // grid-collapse makes sure there is no extra padding on the side of the
+  // grid row. padding should be controlled by the grid
+  @include grid-collapse();
+}
+
+// grid column that spans full width.
+.w-100 {
+  @include grid-column($grid-columns);
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint);
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+    // create classes .col-{infix}-col-size
+    @for $i from 1 through $grid-columns {
+      .col#{$infix}-#{$i} {
+        @include make-grid-column($i);
+      }
+    }
+
+    @for $i from 0 through ($grid-columns - 1) {
+      @if not($infix == "" and $i == 0) {
+        // Avoid emitting useless .offset-0
+        .push#{$infix}-#{$i} {
+          @include column-shift($i);
+        }
+      }
+    }
+    // `$columns - 1` because offsetting by the width of an entire row isn't possible
+    @for $i from 0 through ($grid-columns - 1) {
+      @if not($infix == "" and $i == 0) {
+        // Avoid emitting useless .offset-0
+        .pull#{$infix}-#{$i} {
+          @include column-shift($i * -1);
+        }
+      }
+    }
+  }
+}
+
+// Flex helpers
+
+.justify--start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.justify--end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.justify--middle {
+  display: flex;
+  justify-content: center;
+}
+
+.justify--between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify--around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.align--start {
+  display: flex;
+  align-items: flex-start;
+}
+.align--end {
+  display: flex;
+  align-items: flex-end;
+}
+.align--center {
+  display: flex;
+  align-items: center;
+}
+
+.align--baseline {
+  display: flex;
+  align-items: baseline;
+}

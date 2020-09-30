@@ -1,0 +1,385 @@
+/*
+  BREAKPOINTS
+*/
+/**
+ * Spacing / Font sizes
+ */
+/**
+ * General
+ */
+/**
+ * Theme / Colours
+ */
+/*
+  Main list of all colours
+*/
+@keyframes pulse-animation--primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 181, 253, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(43, 181, 253, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(43, 181, 253, 0.5); } }
+
+@keyframes pulse-animation--red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 0, 74, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(251, 0, 74, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(251, 0, 74, 0.5); } }
+
+@keyframes pulse-animation--green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 243, 181, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(32, 243, 181, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(32, 243, 181, 0.5); } }
+
+@keyframes pulse-animation--blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 121, 255, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(41, 121, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(41, 121, 255, 0.5); } }
+
+@keyframes pulse-animation--orange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 126, 9, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(253, 126, 9, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(253, 126, 9, 0.5); } }
+
+@keyframes pulse-animation--yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 220, 40, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(255, 220, 40, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(255, 220, 40, 0.5); } }
+
+@keyframes pulse-animation--darkpurple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 10, 61, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(54, 10, 61, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(54, 10, 61, 0.5); } }
+
+@keyframes pulse-animation--primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 181, 253, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(43, 181, 253, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(43, 181, 253, 0.5); } }
+
+@keyframes pulse-animation--red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 0, 74, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(251, 0, 74, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(251, 0, 74, 0.5); } }
+
+@keyframes pulse-animation--green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 243, 181, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(32, 243, 181, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(32, 243, 181, 0.5); } }
+
+@keyframes pulse-animation--blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 121, 255, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(41, 121, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(41, 121, 255, 0.5); } }
+
+@keyframes pulse-animation--orange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 126, 9, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(253, 126, 9, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(253, 126, 9, 0.5); } }
+
+@keyframes pulse-animation--yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 220, 40, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(255, 220, 40, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(255, 220, 40, 0.5); } }
+
+@keyframes pulse-animation--darkpurple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 10, 61, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(54, 10, 61, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(54, 10, 61, 0.5); } }
+
+/*
+  Main list of all colours
+*/
+/*
+  BREAKPOINTS
+*/
+/**
+ * Spacing / Font sizes
+ */
+/**
+ * General
+ */
+/**
+ * Theme / Colours
+ */
+/*
+  Main list of all colours
+*/
+@keyframes pulse-animation--primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 181, 253, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(43, 181, 253, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(43, 181, 253, 0.5); } }
+
+@keyframes pulse-animation--red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 0, 74, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(251, 0, 74, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(251, 0, 74, 0.5); } }
+
+@keyframes pulse-animation--green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 243, 181, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(32, 243, 181, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(32, 243, 181, 0.5); } }
+
+@keyframes pulse-animation--blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 121, 255, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(41, 121, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(41, 121, 255, 0.5); } }
+
+@keyframes pulse-animation--orange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 126, 9, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(253, 126, 9, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(253, 126, 9, 0.5); } }
+
+@keyframes pulse-animation--yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 220, 40, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(255, 220, 40, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(255, 220, 40, 0.5); } }
+
+@keyframes pulse-animation--darkpurple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 10, 61, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(54, 10, 61, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(54, 10, 61, 0.5); } }
+
+@keyframes pulse-animation--primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 181, 253, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(43, 181, 253, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(43, 181, 253, 0.5); } }
+
+@keyframes pulse-animation--red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 0, 74, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(251, 0, 74, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(251, 0, 74, 0.5); } }
+
+@keyframes pulse-animation--green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 243, 181, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(32, 243, 181, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(32, 243, 181, 0.5); } }
+
+@keyframes pulse-animation--blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 121, 255, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(41, 121, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(41, 121, 255, 0.5); } }
+
+@keyframes pulse-animation--orange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 126, 9, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(253, 126, 9, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(253, 126, 9, 0.5); } }
+
+@keyframes pulse-animation--yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 220, 40, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(255, 220, 40, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(255, 220, 40, 0.5); } }
+
+@keyframes pulse-animation--darkpurple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 10, 61, 0.5); }
+  70% {
+    box-shadow: 0 0 0 0.4rem rgba(54, 10, 61, 0); }
+  100% {
+    box-shadow: 0 0 0 0.17rem rgba(54, 10, 61, 0.5); } }
+
+/*
+  Main list of all colours
+*/
+.card-elevation--0 {
+  box-shadow: 0 0 0 1px rgba(31, 58, 74, 0.13), 0 0 0 rgba(31, 58, 74, 0), 0 1px 1px rgba(31, 58, 74, 0.13); }
+
+.card-elevation--1 {
+  box-shadow: 0 0 0 1px rgba(31, 58, 74, 0.13), 0 1px 1px rgba(31, 58, 74, 0.13), 0 3px 7px rgba(31, 58, 74, 0.13); }
+
+.card-elevation--2 {
+  box-shadow: 0 0 0 1px rgba(31, 58, 74, 0.13), 0 2px 4px rgba(31, 58, 74, 0.13), 0 8px 24px rgba(31, 58, 74, 0.13); }
+
+.card-elevation--3 {
+  box-shadow: 0 0 0 1px rgba(31, 58, 74, 0.13), 0 4px 8px rgba(31, 58, 74, 0.13), 0 10px 30px 5px rgba(31, 58, 74, 0.13); }
+
+.card {
+  box-sizing: border-box;
+  display: block;
+  border-radius: 0.25rem;
+  min-height: 2rem;
+  max-width: 100%;
+  background-color: white;
+  transition: transform 0.1s ease-in, box-shadow 0.1s ease-in; }
+
+.card-content {
+  box-sizing: border-box;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  height: 100%; }
+
+.card.card-interactive:hover {
+  box-shadow: 0 0 0 1px rgba(31, 58, 74, 0.13), 0 4px 8px rgba(31, 58, 74, 0.13), 0 10px 30px 5px rgba(31, 58, 74, 0.13);
+  cursor: pointer; }
+
+.card.card-interactive:active {
+  opacity: 0.9;
+  box-shadow: 0 0 0 1px rgba(31, 58, 74, 0.13), 0 0 0 rgba(31, 58, 74, 0), 0 1px 1px rgba(31, 58, 74, 0.13);
+  transition-duration: 0; }
+
+ui-card {
+  display: block; }
+
+.mdc-menu {
+  box-shadow: 0 0 0 1px rgba(31, 58, 74, 0.13), 0 2px 4px rgba(31, 58, 74, 0.13), 0 8px 24px rgba(31, 58, 74, 0.13);
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  min-width: 170px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+  margin: 0;
+  padding: 0;
+  transform: scale(1);
+  transform-origin: top left;
+  border-radius: 2px;
+  background-color: white;
+  opacity: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: auto;
+  will-change: transform, opacity;
+  z-index: 4; }
+  .mdc-menu:focus {
+    outline: none; }
+  .mdc-menu--animating-open {
+    display: inline-block;
+    transform: scale(0.8);
+    transition: opacity 0.03s linear, transform 0.12s cubic-bezier(0, 0, 0.2, 1);
+    opacity: 0;
+    overflow-y: hidden; }
+  .mdc-menu--open {
+    display: inline-block;
+    transform: scale(1);
+    opacity: 1; }
+  .mdc-menu--animating-closed {
+    display: inline-block;
+    transition: opacity 0.075s linear;
+    opacity: 0;
+    overflow-y: hidden; }
+  .mdc-menu__items {
+    box-sizing: border-box;
+    transform: scale(1);
+    overflow-x: hidden;
+    overflow-y: auto;
+    will-change: transform; }
+    .mdc-menu__items > .mdc-list-item {
+      cursor: pointer; }
+    .mdc-menu--animating .mdc-menu__items {
+      overflow-y: hidden; }
+  .mdc-menu--animating-open > .mdc-menu__items {
+    transform: scale(1.25); }
+  .mdc-menu--open > .mdc-menu__items {
+    transform: scale(1); }
+  [dir="rtl"] .mdc-menu {
+    transform-origin: top right; }
+  .mdc-menu .mdc-list-group,
+  .mdc-menu .mdc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column; }
+  .mdc-menu .mdc-list-item {
+    padding: 1rem;
+    position: relative;
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+    user-select: none; }
+    .mdc-menu .mdc-list-item:hover {
+      background: #eef4f6; }
+    .mdc-menu .mdc-list-item:active, .mdc-menu .mdc-list-item:focus {
+      background: #dde9ed; }
+  .mdc-menu .mdc-list-item__graphic {
+    color: red; }
+  .mdc-menu .mdc-list-item[aria-disabled="true"] {
+    color: #d0d5d7;
+    cursor: default;
+    pointer-events: none; }
+    .mdc-menu .mdc-list-item[aria-disabled="true"]:focus::before {
+      opacity: 0; }
+
+.mdc-menu-anchor {
+  position: relative;
+  overflow: visible; }

@@ -1,0 +1,73 @@
+@function color($color, $density: 300) {
+  @if map-has-key($color, $density) {
+    @return map-get($color, $density);
+  }
+  @warn "Undefined density `#{$density}` not found in #{$color}";
+}
+
+$ink: (
+  100: #d0d5d7,
+  200: #707d85,
+  300: lighten(#45525a, 10%),
+  400: lighten(#101e26, 10%),
+  500: #101e26
+);
+
+$base: (
+  100: white,
+  200: #eef4f6,
+  300: darken(#eef4f6, 5%)
+);
+
+$lightblue: (300: #2bb5fd);
+
+$red: (300: #fb004a);
+
+$green: (300: #20f3b5);
+
+$blue: (300: #2979ff);
+
+$orange: (300: #fd7e09);
+
+$purple: (300: #ad63ff);
+
+$yellow: (300: #ffdc28);
+
+$darkpurple: (300: #360a3d);
+
+$primary: color($lightblue);
+
+/*
+  Main list of all colours
+*/
+$ui-colors: (
+  primary: $lightblue,
+  red: $red,
+  green: $green,
+  blue: $blue,
+  orange: $orange,
+  yellow: $yellow,
+  darkpurple: $darkpurple
+);
+
+// body text
+$light-grey-bg: #f5f5f5;
+$grey-text: #777;
+$dark-grey-text: #444;
+
+// brand colours
+$brand-primary: color($lightblue);
+$brand-secondary: color($darkpurple);
+
+// core metrics
+$metric-trurating: $brand-primary;
+$metric-product: color($red);
+$metric-service: color($purple);
+$metric-value: color($orange);
+$metric-recommend: color($green);
+$metric-experience: color($yellow);
+
+// RAG chart colours
+$rag-green: #86c74f;
+$rag-amber: #ff9f26;
+$rag-red: #e3524f;

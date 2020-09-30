@@ -1,0 +1,20 @@
+@import "lib";
+
+.tooltip__container {
+  display: inline-block;
+  > * {
+    margin: 0;
+  }
+}
+
+ui-tooltip {
+  margin-bottom: spacing(1);
+  display: inline-block;
+  & {
+    margin-right: spacing(1);
+  }
+}
+
+.tippy {
+  position: absolute;
+}

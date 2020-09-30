@@ -1,0 +1,42 @@
+@import "lib";
+
+@mixin list-item-base() {
+  width: 100%;
+  display: block;
+  list-style: none;
+  padding: spacing(1);
+  border-bottom: 1px solid color($ink, 100);
+  &:hover,
+  &:focus {
+    outline: none;
+    cursor: pointer;
+    background-color: color($base, 200);
+  }
+  &:active {
+    background: color($base, 300);
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+ui-list-item {
+  width: 100%;
+  border-bottom: 1px solid color($ink, 100);
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.list-item {
+  @include list-item-base();
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  > .list-item {
+  }
+}

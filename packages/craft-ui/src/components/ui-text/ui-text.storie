@@ -1,0 +1,34 @@
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import PageWrapper from "../../components/PageWrapper";
+import PageTitle from "../../components/PageTitle";
+import SectionTitle from "../../components/SectionTitle";
+import HtmlView from "../../components/HtmlView";
+import ApiReference from "../../components/ApiReference";
+import propertyDocs from "./propertyDocs";
+
+const HeadingsSnippet = () => (
+  <div>
+    <ui-text color="normal" weight="bold" type="h1" transform="uppercase">
+      Heading 1
+    </ui-text>
+    <ui-text color="light" weight="normal" type="h2">
+      Heading 2
+    </ui-text>
+    <ui-text color="lightest" weight="normal" type="h3">
+      Heading 3
+    </ui-text>
+    <ui-text type="h4">Heading 4</ui-text>
+    <ui-text type="h5">Heading 5</ui-text>
+    <ui-text type="h6">Heading 6</ui-text>
+  </div>
+);
+
+storiesOf("Core/Typography", module).add("Headings", () => (
+  <PageWrapper>
+    <PageTitle title="Headings" />
+    <HeadingsSnippet />
+    <HtmlView componentToDisplay={HeadingsSnippet} />
+    <ApiReference properties={propertyDocs} />
+  </PageWrapper>
+));

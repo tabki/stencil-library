@@ -1,0 +1,71 @@
+// defines what font size and paddings are used for each size of container
+@import "typography";
+
+$surface-size-small: (
+  marginV: spacing(0.5),
+  marginH: spacing(1),
+  fontSize: 5
+);
+
+$surface-size-medium: (
+  marginV: spacing(0.75),
+  marginH: spacing(1),
+  fontSize: 5
+);
+
+$surface-size-large: (
+  marginV: spacing(1),
+  marginH: spacing(2),
+  fontSize: 4
+);
+
+$surface-size-xlarge: (
+  marginV: spacing(1),
+  marginH: spacing(2),
+  fontSize: 2
+);
+
+$surface-sizes: (
+  small: $surface-size-small,
+  medium: $surface-size-medium,
+  large: $surface-size-large,
+  xlarge: $surface-size-xlarge
+);
+
+$surface-shapes: (
+  circle,
+  rounded,
+  box
+);
+
+@mixin surface-size($size: normal) {
+  $size-def: map-get($surface-sizes, $size);
+  padding-left: map-get($size-def, marginH);
+  padding-right: map-get($size-def, marginH);
+  padding-top: map-get($size-def, marginV);
+  padding-bottom: map-get($size-def, marginV);
+  @include font-scale(map-get($size-def, fontSize));
+}
+
+@function get-circle-radius($size) {
+  $size-def: map-get($surface-sizes, $size);
+  $font-size: spacing(get-font-scales(map-get($size-def, fontSize)));
+  // return a large number
+  @return $font-size * 10;
+}
+@mixin surface-shape($size, $shape) {
+  border-radius: get-circle-radius($size);
+}
+
+@mixin generateSizingStyles() {
+  @each $size, $config in $surface-sizes {
+    &.--size-#{$size} {
+      @include surface-size($size);
+      @each $shape in $surface-shapes {
+        &.--shape-#{$shape} {
+          @include surface-shape($size, $shape);
+        }
+      }
+    }
+  }
+}

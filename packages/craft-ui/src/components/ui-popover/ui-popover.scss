@@ -1,0 +1,17 @@
+.ui-popover__container {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.ui-popover {
+  position: absolute;
+  z-index: 99;
+}
+
+.ui-popover__trigger-area {
+  > * {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}

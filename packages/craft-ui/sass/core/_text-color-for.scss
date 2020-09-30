@@ -1,0 +1,5 @@
+@import "../colors";
+
+@function text-color-for($base-color) {
+  @return contrast($base-color, white, color($ink));
+}

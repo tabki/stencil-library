@@ -1,0 +1,46 @@
+@import "text";
+
+.tabs {
+  margin: 0;
+  padding-left: 0;
+  margin-bottom: 1px;
+
+  .tabs__tab {
+    get-text-t: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #4a4a4a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: -1px;
+    padding: spacing(1) spacing(1);
+    padding-bottom: spacing(1);
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    @include get-text-shade(light);
+    &:hover {
+      cursor: pointer;
+      @include get-text-shade(normal);
+      //@include get-text-weight(bold);
+      //text-shadow: 0 0 1px black;
+    }
+  }
+
+  .is-active {
+    @include get-text-shade(dark);
+    @include get-text-weight(bold);
+    &:after {
+      content: " ";
+      height: spacing(0.25);
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 0;
+      background: $primary;
+    }
+  }
+}

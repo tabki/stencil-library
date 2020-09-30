@@ -1,0 +1,563 @@
+{
+  "components": [
+    {
+      "tag": "function-as-prop",
+      "dependencies": [],
+      "componentClass": "FunctionAsProp",
+      "componentPath": "components/function-as-prop/function-as-prop.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "eventHandler"
+        }
+      ],
+      "events": [
+        {
+          "event": "testEvent"
+        }
+      ]
+    },
+    {
+      "tag": "ui-arrow",
+      "dependencies": [],
+      "componentClass": "UIArrow",
+      "componentPath": "components/ui-tooltip/ui-arrow.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-tooltip/ui-tooltip.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "color",
+          "type": "String"
+        },
+        {
+          "name": "direction",
+          "type": "String"
+        },
+        {
+          "name": "placement",
+          "type": "String"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "ui-arrow-box",
+      "dependencies": [
+        "ui-card",
+        "ui-card-content"
+      ],
+      "componentClass": "UIArrowBox",
+      "componentPath": "components/ui-arrow-box/ui-arrow-box.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-arrow-box/ui-arrow-box.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "color",
+          "type": "String"
+        },
+        {
+          "name": "padding",
+          "type": "Number"
+        },
+        {
+          "name": "placement",
+          "type": "String",
+          "watch": [
+            "watchPlacement"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "arrowDirection"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getArrowElement"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "host": {
+        "theme": "ui-arrow"
+      }
+    },
+    {
+      "tag": "ui-badge",
+      "dependencies": [],
+      "componentClass": "UIBadge",
+      "componentPath": "components/ui-badge/ui-badge.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-badge/ui-badge.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "color",
+          "type": "String"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "size",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "tag": "ui-button",
+      "dependencies": [],
+      "componentClass": "TruButton",
+      "componentPath": "components/ui-button/ui-button.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-button/ui-button.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "color",
+          "type": "String"
+        },
+        {
+          "name": "href",
+          "type": "String"
+        },
+        {
+          "name": "size",
+          "type": "String"
+        },
+        {
+          "name": "type",
+          "type": "String"
+        },
+        {
+          "name": "usage"
+        }
+      ]
+    },
+    {
+      "tag": "ui-card",
+      "dependencies": [],
+      "componentClass": "TruCard",
+      "componentPath": "components/ui-card/ui-card.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-card/ui-card.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "elevation",
+          "type": "Number"
+        },
+        {
+          "name": "interactive",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "tag": "ui-card-content",
+      "dependencies": [],
+      "componentClass": "TruCardContent",
+      "componentPath": "components/ui-card/ui-card-content.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-card/ui-card.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "padding",
+          "type": "Number"
+        }
+      ]
+    },
+    {
+      "tag": "ui-divider",
+      "dependencies": [],
+      "componentClass": "UIDivider",
+      "componentPath": "components/ui-divider/ui-divider.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-divider/ui-divider.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "height",
+          "type": "Number"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "line",
+          "type": "String"
+        },
+        {
+          "name": "padding",
+          "type": "Number"
+        }
+      ]
+    },
+    {
+      "tag": "ui-dropdown",
+      "dependencies": [],
+      "componentClass": "UIDropdown",
+      "componentPath": "components/ui-dropdown/ui-drowndown.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-dropdown/ui-dropdown.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "line",
+          "type": "String"
+        },
+        {
+          "name": "padding",
+          "type": "Number"
+        }
+      ],
+      "states": [
+        {
+          "name": "mdcMenu"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "ui-dropdown-item",
+      "dependencies": [],
+      "componentClass": "UIDropdownItem",
+      "componentPath": "components/ui-dropdown/ui-dropdown-item.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-dropdown/ui-dropdown.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "tabindex",
+          "type": "Number"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "host": {
+        "theme": "mdc-list-item",
+        "role": "menuitem"
+      }
+    },
+    {
+      "tag": "ui-grid",
+      "dependencies": [],
+      "componentClass": "UIGrid",
+      "componentPath": "components/ui-grid/ui-grid.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-grid/ui-grid.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "cols",
+          "type": "Number"
+        },
+        {
+          "name": "gutter",
+          "type": "Number"
+        },
+        {
+          "name": "padding",
+          "type": "Number"
+        },
+        {
+          "name": "testing",
+          "type": "Boolean"
+        },
+        {
+          "name": "wrap",
+          "type": "Boolean"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "ui-grid-item",
+      "dependencies": [],
+      "componentClass": "UIGrid",
+      "componentPath": "components/ui-grid/ui-grid-item.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-grid/ui-grid.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "gutter",
+          "type": "Number"
+        },
+        {
+          "name": "padding",
+          "type": "Number"
+        }
+      ]
+    },
+    {
+      "tag": "ui-init",
+      "dependencies": [],
+      "componentClass": "UIReset",
+      "componentPath": "components/ui-init/ui-init.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-init/ui-init-component.css"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "ui-input",
+      "dependencies": [
+        "ui-arrow",
+        "ui-card",
+        "ui-card-content"
+      ],
+      "componentClass": "UIInput",
+      "componentPath": "components/ui-input/ui-input.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-input/ui-input.css"
+          ]
+        }
+      },
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "ui-list",
+      "dependencies": [],
+      "componentClass": "UIList",
+      "componentPath": "components/ui-list/ui-list.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-list/ui-list.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "comps",
+          "type": "Any"
+        },
+        {
+          "name": "elevation",
+          "type": "Number"
+        },
+        {
+          "name": "interactive",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "tag": "ui-list-item",
+      "dependencies": [],
+      "componentClass": "UIListItem",
+      "componentPath": "components/ui-list/ui-list-item.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-list/ui-list.css"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "ui-popover",
+      "dependencies": [
+        "ui-arrow-box",
+        "ui-button"
+      ],
+      "componentClass": "UIPopover",
+      "componentPath": "components/ui-popover/ui-popover.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-popover/ui-popover.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "placement",
+          "type": "String"
+        },
+        {
+          "name": "trigger",
+          "type": "String"
+        }
+      ],
+      "states": [
+        {
+          "name": "isVisable"
+        },
+        {
+          "name": "popoverContainerEl"
+        },
+        {
+          "name": "popoverEl"
+        },
+        {
+          "name": "popperInstance"
+        },
+        {
+          "name": "popperPlacement"
+        },
+        {
+          "name": "triggerEl"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "ui-text",
+      "dependencies": [],
+      "componentClass": "TruText",
+      "componentPath": "components/ui-text/ui-text.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-text/ui-text.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "clickable",
+          "type": "Boolean"
+        },
+        {
+          "name": "color",
+          "type": "String"
+        },
+        {
+          "name": "href",
+          "type": "String"
+        },
+        {
+          "name": "spacing",
+          "type": "String"
+        },
+        {
+          "name": "transform",
+          "type": "String"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "weight",
+          "type": "String"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "ui-tooltip",
+      "dependencies": [
+        "ui-arrow-box",
+        "ui-button"
+      ],
+      "componentClass": "UITooltip",
+      "componentPath": "components/ui-tooltip/ui-tooltip.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/ui-tooltip/ui-tooltip.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "placement",
+          "type": "Any"
+        }
+      ],
+      "states": [
+        {
+          "name": "popper"
+        },
+        {
+          "name": "popperPlacement"
+        },
+        {
+          "name": "tooltipNode"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.6.13",
+    "typescriptVersion": "2.7.2"
+  }
+}

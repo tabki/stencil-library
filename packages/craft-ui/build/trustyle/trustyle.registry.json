@@ -1,0 +1,66 @@
+{
+  "namespace": "trustyle",
+  "fsNamespace": "trustyle",
+  "loader": "../trustyle.js",
+  "core": "trustyle.core.js",
+  "corePolyfilled": "es5-build-disabled.js",
+  "components": {
+    "function-as-prop": {
+      "$": "function-as-prop"
+    },
+    "ui-arrow": {
+      "$": "ui-arrow"
+    },
+    "ui-arrow-box": {
+      "$": "ui-arrow-box"
+    },
+    "ui-badge": {
+      "$": "ui-badge"
+    },
+    "ui-button": {
+      "$": "ui-arrow-box"
+    },
+    "ui-card": {
+      "$": "ui-card"
+    },
+    "ui-card-content": {
+      "$": "ui-card"
+    },
+    "ui-divider": {
+      "$": "ui-divider"
+    },
+    "ui-dropdown": {
+      "$": "ui-dropdown"
+    },
+    "ui-dropdown-item": {
+      "$": "ui-dropdown-item"
+    },
+    "ui-grid": {
+      "$": "ui-grid"
+    },
+    "ui-grid-item": {
+      "$": "ui-grid-item"
+    },
+    "ui-init": {
+      "$": "ui-init"
+    },
+    "ui-input": {
+      "$": "ui-arrow"
+    },
+    "ui-list": {
+      "$": "ui-list"
+    },
+    "ui-list-item": {
+      "$": "ui-list-item"
+    },
+    "ui-popover": {
+      "$": "ui-popover"
+    },
+    "ui-text": {
+      "$": "ui-text"
+    },
+    "ui-tooltip": {
+      "$": "ui-tooltip"
+    }
+  }
+}
